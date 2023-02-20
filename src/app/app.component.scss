@@ -1,0 +1,96 @@
+@import "../../src/styles.scss";
+
+.navbar {
+  background-color: $azulPrincipal;
+  // color: $azulPrincipal;
+  margin-bottom: 0.1rem;
+}
+
+.iconNavBar {
+  font-size: 30px;
+  margin-right: 4px;
+  color: $claro;
+}
+.navbar-toggler {
+  color: white;
+  border-color: transparent;
+}
+
+.footer {
+  color: $claro;
+  background-color: $azulOscuro;
+  .autor {
+    font-size: small;
+  }
+}
+
+.bi {
+  margin-right: 8px;
+  font-size: 20px;
+  transition: 0.3s;
+  color: $claro;
+}
+
+.bi:hover {
+  opacity: 0.7;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.link{
+  transition: 0.3s;
+}
+.link:hover {
+  opacity: 0.7;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.bi-box-arrow-up {
+  font-size: 35px;
+  transition: 0.3s;
+}
+.bi-box-arrow-up:hover {
+  transform: scale(1.5);
+}
+
+.whatsapp{
+  position: fixed;
+  background-color: rgb(86, 240, 86);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  bottom: 80px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  box-shadow: 1px 2px 2px gray;
+  .bi-whatsapp{
+    
+    color: white;
+  }
+}
+.whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 2.5px 2.5px 5px gray;
+  cursor: pointer;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+.nav-link:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    transition: 0.3s;
+  }
+  .nav-link:hover {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,135 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <i class="bi-pc-display iconNavBar"></i>
+    <a
+      class="navbar-brand text-light"
+      routerLink="/inicio"
+      routerLinkActive="active"
+      ><h3>MINKATEC</h3></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class=""><i class="bi bi-list"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a
+          class="nav-link active text-light"
+          id="inicio"
+          aria-current="page"
+          routerLink="/inicio"
+          routerLinkActive="active"
+          ><h6>Inicio</h6></a
+        >
+        <a
+          class="nav-link text-light"
+          routerLink="/nosotros"
+          routerLinkActive="active"
+          ><h6>Nosotros</h6></a
+        >
+        <a
+          class="nav-link text-light"
+          routerLink="/proyectos"
+          routerLinkActive="active"
+          ><h6>Proyectos</h6></a
+        >
+        <a
+          class="nav-link text-light"
+          routerLink="/contacto"
+          routerLinkActive="active"
+          ><h6>Contacto</h6></a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet>
+  <div class="whatsapp">
+    <a
+      href="https://api.whatsapp.com/send?phone=51931760528&text=Hola!%20Quiero%20generar%20mas%20ventas!"
+      target="_blank"
+    >
+      <i class="bi-whatsapp"></i
+    ></a>
+  </div>
+</router-outlet>
+
+<footer
+  class="container-fluid footer text-center pt-2 position-relative bottom-0"
+>
+  <strong>
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col-sm-2 d-flex flex-column">
+        <p class="m-0">Contacto</p>
+        <div class="d-flex flex-row justify-content-center">
+          <a
+            href="mailto:afigueredo@minkatec.com.pe"
+            class="link"
+            title="Correo"
+            target="_blank"
+            ><i class="bi bi-envelope-at-fill"></i
+          ></a>
+          <a
+            class="link"
+            href="https://api.whatsapp.com/send?phone=51931760528&text=Hola!%20Quiero%20generar%20mas%20ventas!"
+            target="_blank"
+            title="Whatsapp"
+          >
+            <i class="bi bi-whatsapp whatsappf"></i>
+          </a>
+          <a
+            href="tg://resolve?domain=Alex237823"
+            title="Telegrameame"
+            class="link"
+            target="_blank"
+            ><i class="bi bi-telegram"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-sm-2 d-flex flex-column">
+        <p class="m-0">Redes Sociales</p>
+        <div class="d-flex flex-row justify-content-center">
+          <a
+            href="https://www.instagram.com/minkatecsac/"
+            class="link"
+            target="_blank"
+            title="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/minkatecsac/"
+            class="link"
+            target="_blank"
+            title="facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="" class="link" title="TikTok" class="link"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-sm-2 d-flex flex-column text-center">
+        <div class="d-flex flex-row justify-content-center">
+          <a href="#" class="link">
+            <i class="bi bi-box-arrow-up text-center ms-2"></i>
+          </a>
+        </div>
+        Subir
+      </div>
+    </div>
+  </strong>
+  <p class="autor m-0">
+    Copyright&copy; 2023 Soluciones Técnologicas - Todos los derechos
+    reservados.
+  </p>
+</footer>
