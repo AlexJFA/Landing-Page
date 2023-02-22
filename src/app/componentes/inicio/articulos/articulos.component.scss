@@ -1,45 +1,23 @@
 @import "../../../../styles.scss";
 
-
-.card{
-    box-shadow: 1px 2px 4px  gray;
-    padding: 0;
-    transition: 0.3s;
-      
-}
-.card:hover{
-    box-shadow: 2px 3px 4px gray ;
+.card {
+  box-shadow: 1px 2px 4px gray;
+  padding: 0;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 2px 3px 4px gray;
     transform: scale(1.1);
     z-index: 1;
-}
-
-.card-img-top{
+  }
+  .card-img-top {
     height: 12rem;
-}
-
-.btn{
+  }
+  .btn {
     background-color: $azulClaro;
     transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 2px 3px 4px gray;
+    }
+  }
 }
-
-.btn:hover{
-    transform: scale(1.1);
-    box-shadow: 2px 3px 4px gray ;
-    
-}
-
-
-// @media  ( max-width: 600px ) {
-    
-//     .card{
-//         display: flex;
-//         flex-wrap: wrap;
-
-//     }
-
-//     .card-img-top{
-//         width: 100%;
-//     }
-
-
-// }

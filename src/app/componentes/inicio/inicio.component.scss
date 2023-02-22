@@ -1,37 +1,32 @@
 @import "../../../styles.scss";
 
-img {
-  max-height: 400px;
-}
 .carousel {
-  // padding: 0.3rem 2rem;
-}
-
-.img-Carrucel {
-  width: 100%;
-  // border-radius: 20px;
-  background-image: contain;
-  opacity: 0.85;
+  padding: 0.5rem;
+  .img-Carrucel {
+    max-height: 400px;
+    width: 100%;
+    background-image: contain;
+    opacity: 0.85;
+    border-radius: 5px;
+  }
 }
 
 .servicios {
   color: $claro;
   background-color: $azulClaro;
   border-radius: 10px;
-  // margin: 0 1px;
   padding: 0.7rem 0.7rem;
   box-shadow: 1px 2px 2px gray;
   transition: 0.3s;
   width: 8rem;
-}
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 2.5px 2.5px 5px gray;
+  }
 
-.servicios:hover {
-  transform: scale(1.1);
-  box-shadow: 2.5px 2.5px 5px gray;
-}
-
-.bi {
+  .bi {
     font-size: 3rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -40,5 +35,3 @@ img {
     margin: 2px;
   }
 }
-
-

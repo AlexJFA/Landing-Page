@@ -2,58 +2,52 @@
 
 .navbar {
   background-color: $azulPrincipal;
-  // color: $azulPrincipal;
   margin-bottom: 0.1rem;
-}
-
-.iconNavBar {
-  font-size: 30px;
-  margin-right: 4px;
-  color: $claro;
-}
-.navbar-toggler {
-  color: white;
-  border-color: transparent;
+  .nav-link {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .iconNavBar {
+    font-size: 30px;
+    margin-right: 4px;
+    color: $claro;
+  }
+  .navbar-toggler {
+    color: white;
+    border-color: transparent;
+  }
 }
 
 .footer {
   color: $claro;
   background-color: $azulOscuro;
-  .autor {
-    font-size: small;
+  .bi {
+    margin-right: 8px;
+    font-size: 20px;
+    color: $claro;
+  }
+
+  .link {
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+
+    .autor {
+      font-size: small;
+    }
   }
 }
 
-.bi {
-  margin-right: 8px;
-  font-size: 20px;
-  transition: 0.3s;
-  color: $claro;
+.router {
+  min-height: 100vh;
 }
 
-.bi:hover {
-  opacity: 0.7;
-  transform: scale(1.5);
-  cursor: pointer;
-}
-.link{
-  transition: 0.3s;
-}
-.link:hover {
-  opacity: 0.7;
-  transform: scale(1.5);
-  cursor: pointer;
-}
-
-.bi-box-arrow-up {
-  font-size: 35px;
-  transition: 0.3s;
-}
-.bi-box-arrow-up:hover {
-  transform: scale(1.5);
-}
-
-.whatsapp{
+.whatsapp {
   position: fixed;
   background-color: rgb(86, 240, 86);
   border-radius: 50%;
@@ -68,29 +62,21 @@
   align-items: center;
   transition: 0.3s;
   box-shadow: 1px 2px 2px gray;
-  .bi-whatsapp{
-    
+  .bi-whatsapp {
     color: white;
   }
-}
-.whatsapp:hover {
-  transform: scale(1.1);
-  box-shadow: 2.5px 2.5px 5px gray;
-  cursor: pointer;
-}
-
-.nav-link {
-  transition: 0.3s;
-}
-.nav-link:hover {
-  transform: scale(1.2);
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 2.5px 2.5px 5px gray;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 991px) {
   .nav-link {
     transition: 0.3s;
-  }
-  .nav-link:hover {
-    transform: scale(0.9);
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 }
