@@ -1,8 +1,29 @@
 @import "../../src/styles.scss";
 
+.info{
+  background: $azulClaro;
+  height: 2.5rem;
+  .correo,.tlf{
+    text-decoration: none;
+    color: $claro;
+  }
+}
+
 .navbar {
   background-color: $azulPrincipal;
-  margin-bottom: 0.1rem;
+  padding: 0;
+  // margin: 1rem 0 0 0 ;
+  h3{
+    // color: rgb(116, 116, 116);
+    color: $azulClaro;
+    font-size: 3rem;
+  
+  }
+  h6{
+    font-size: 1rem;
+    color: $azulClaro;
+  }
+
   .nav-link {
     transition: 0.3s;
     &:hover {
@@ -10,14 +31,16 @@
     }
   }
   .iconNavBar {
-    font-size: 30px;
+    font-size: 4rem;
     margin-right: 4px;
-    color: $claro;
+    // color: $claro;
+    color: $azulClaro;
   }
   .navbar-toggler {
-    color: white;
+    color: $azulClaro;
     border-color: transparent;
   }
+
 }
 
 .footer {
@@ -36,10 +59,9 @@
       transform: scale(1.5);
       cursor: pointer;
     }
-
-    .autor {
-      font-size: small;
-    }
+  }
+  .autor{
+    font-size: small;
   }
 }
 
@@ -72,11 +94,22 @@
   }
 }
 
+
+@media (min-width:991px){
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+ 
+  }
+}
+
 @media (max-width: 991px) {
   .nav-link {
     transition: 0.3s;
     &:hover {
-      transform: scale(0.9);
+      transform: scale(0.8);
     }
   }
 }
