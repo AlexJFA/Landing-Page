@@ -13,24 +13,26 @@
     border-radius: 5px;
     
   }
+  .carousel-caption{
+    background-color: rgba(66, 64, 64, 0.7);
+    border-radius: 10px;
+  }
 }
 
-// .carousel-item{
-
-//   margin: 0;
-// }
-
 .servicios {
-  color: $claro;
-  background-color: $azulClaro;
-  border-radius: 10px;
-  padding: 0.7rem 0.7rem;
-  box-shadow: 1px 2px 2px gray;
-  transition: 0.3s;
   width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  color: $claro;
+  background: rgb(31,93,176);
+  background: linear-gradient(99deg, rgba(31,93,176,1) 63%, rgba(0,133,255,0.9920343137254902) 100%);
+  box-shadow: 0.2px 0.2px 2px gray;
+  transition: 0.3s;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+
   &:hover {
     transform: scale(1.1);
-    box-shadow: 2.5px 2.5px 5px gray;
   }
 
   .bi {
@@ -38,9 +40,23 @@
   }
 }
 
-@media (max-width: 991px) {
-  .servicios {
-    padding: 0.5rem 0.5rem;
-    margin: 2px;
+@media screen and (max-width: 500px) {
+  .conten-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .servicios{
+        margin: 1rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .carousel {
+    padding: 0;
+    margin: 0;
   }
 }

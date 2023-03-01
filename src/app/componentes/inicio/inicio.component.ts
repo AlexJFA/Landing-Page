@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NosotrosComponent } from '../nosotros/nosotros.component';
 
 @Component({
   selector: 'app-inicio',
