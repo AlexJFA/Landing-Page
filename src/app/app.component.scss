@@ -1,51 +1,52 @@
 @import "../../src/styles.scss";
 
-.info{
-  background: $azulClaro;
-  height: 2.5rem;
-  .correo,.tlf{
+.info {
+  background: rgb(31,93,176);
+  background: linear-gradient(99deg, rgba(31,93,176,1) 63%, rgba(0,133,255,0.9920343137254902) 100%);
+  height: 3rem;
+  .correo,
+  .tlf {
     text-decoration: none;
     color: $claro;
   }
 }
 
 .navbar {
-  background-color: $azulPrincipal;
+  background-color: $claro;
   padding: 0;
   // margin: 1rem 0 0 0 ;
-  h3{
+  h3 {
     // color: rgb(116, 116, 116);
-    color: $azulClaro;
+    color: $azulPrincipal;
     font-size: 3rem;
-  
   }
-  h6{
+  h6 {
     font-size: 1rem;
-    color: $azulClaro;
+    color: $azulPrincipal;
   }
 
   .nav-link {
     transition: 0.3s;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(0.9);
     }
   }
   .iconNavBar {
     font-size: 4rem;
     margin-right: 4px;
     // color: $claro;
-    color: $azulClaro;
+    color: $azulPrincipal;
   }
   .navbar-toggler {
-    color: $azulClaro;
+    color: $azulPrincipal;
     border-color: transparent;
   }
-
 }
 
 .footer {
   color: $claro;
   background-color: $azulOscuro;
+
   .bi {
     margin-right: 8px;
     font-size: 20px;
@@ -60,7 +61,7 @@
       cursor: pointer;
     }
   }
-  .autor{
+  .autor {
     font-size: small;
   }
 }
@@ -94,16 +95,32 @@
   }
 }
 
+// centrado de navbar
+@media (min-width: 991px) {
+  .navbar {
+    margin: 0 20% 0 23%;
+  }
 
-@media (min-width:991px){
-  .navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
- 
+  @media (max-width: 1100px) {
+    .navbar {
+      margin: 0 15% 0 18%;
+    }
+
+    @media (max-width: 1010px) {
+      .navbar {
+        margin: 0 10% 0 16%;
+      }
+    }
   }
 }
+
+//tamaño y centrado del Mikatec
+@media (max-width: 500px) {
+  .navbar-brand h3{
+    font-size: 2.5rem;
+  }
+}
+
 
 @media (max-width: 991px) {
   .nav-link {

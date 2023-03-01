@@ -9,8 +9,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 const routes: Routes = [
   {path:"", component:InicioComponent},
   {path:"inicio", component:InicioComponent},
-  {path:"nosotros", component:NosotrosComponent},
-  {path:"proyectos", component:ProyectosComponent},
+  // {path:"nosotros", component:NosotrosComponent},
+  // {path:"proyectos", component:ProyectosComponent},
   {path:"contacto", component:ContactoComponent},
   {path:"**", component:NotFoundComponent}
 ];

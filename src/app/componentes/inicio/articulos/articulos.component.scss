@@ -1,11 +1,10 @@
 @import "../../../../styles.scss";
 
 .card {
-  box-shadow: 1px 2px 4px gray;
+  box-shadow: 0.1px 0.1px 2px gray;
   padding: 0;
   transition: 0.3s;
   &:hover {
-    box-shadow: 2px 3px 4px gray;
     transform: scale(1.1);
     z-index: 1;
   }
