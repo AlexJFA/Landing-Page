@@ -6,13 +6,11 @@ h2{
 }
 
 .container-fluid {
-  padding: 1rem 5rem;
-  
+  padding: 1rem 15rem;
   
 }
 
 .card{
-
   box-shadow: 0.1px 0.1px 2px gray;
   transition: 0.3s;
   &:hover {
@@ -25,9 +23,31 @@ h2{
   
 } 
 
+
+// ajuste de padding de proyectos, "nota: buscar una mejor solucion"
+@media screen and (max-width:1100px) {
+  .container-fluid{
+    padding: 1rem 10rem;
+  }
+  
+}
+
+@media screen and (max-width:900px) {
+  .container-fluid{
+    padding: 1rem 5rem;
+  }
+  
+}
+@media screen and (max-width:800px) {
+  .container-fluid{
+    padding: 1rem 2.5rem;
+  }
+  
+}
+
 @media screen and (max-width:500px) {
   .container-fluid{
-    padding: 1rem 1rem;
+    padding: 1rem;
   }
   
 }
