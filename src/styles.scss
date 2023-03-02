@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-html{
+
+html,body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Tilt Neon', cursive;
+    // font-family: 'Lato', sans-serif;
 }
 
-$azulPrincipal: #034078;
-$azulOscuro: #0A1128 ;
+
+$azulPrincipal: #1f5db0; 
+// $azulOscuro: #0A1128 ;
+$azulOscuro: #001F54 ;
+// $azulOscuro: #1f5db0;
 $azulMarino: #001F54;
-$azulClaro: #1282A2 ;
+// $azulClaro: #1da9fd ;
+$azulClaro: #1f5db0 ;
 $claro:#FEFCFB 
+

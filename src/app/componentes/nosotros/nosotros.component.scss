@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+// .container{
+//     min-height: 100vh;
+    
+// }
+
+.somos{
+    // min-height: 100vh;
+    margin-top: 5%;
+    h2{
+        color: $azulClaro;;
+    }
+    img{
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0.5px 0.5px 2px gray;
+    }
+}

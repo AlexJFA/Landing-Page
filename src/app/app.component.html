@@ -1,5 +1,18 @@
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+<nav class="navbar bg-body-tertiary m-0">
+  <div class="container-fluid info d-flex justify-content-evenly align-items-center">
+    <div class="correo">
+      <i class="bi bi-envelope-fill"></i>
+      <a class="correo" href="mailto:afigueredo@minkatec.com.pe"> Afigueredo@minkatec.com.pe</a> 
+    </div>
+    <div class="tlf">
+      <i class="bi bi-telephone-forward-fill"></i>
+      <a class="tlf" href="https://api.whatsapp.com/send?phone=51931760528&text=Hola!%20Quiero%20generar%20mas%20ventas!"> (+51)-931760528</a>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg"  >
+  <div class="container d-flex justify-content-evenly">
     <i class="bi-pc-display iconNavBar"></i>
     <a
       class="navbar-brand text-light"
@@ -30,13 +43,13 @@
         >
         <a
           class="nav-link text-light"
-          routerLink="/nosotros"
+          href="#nosotros"
           routerLinkActive="active"
           ><h6>Nosotros</h6></a
         >
         <a
           class="nav-link text-light"
-          routerLink="/proyectos"
+          href="#proyectos"
           routerLinkActive="active"
           ><h6>Proyectos</h6></a
         >
@@ -51,7 +64,7 @@
   </div>
 </nav>
 
-<router-outlet>
+<router-outlet class="router">
   <div class="whatsapp">
     <a
       href="https://api.whatsapp.com/send?phone=51931760528&text=Hola!%20Quiero%20generar%20mas%20ventas!"
@@ -62,6 +75,7 @@
   </div>
 </router-outlet>
 
+<!-- Footer -->
 <footer
   class="container-fluid footer text-center pt-2 position-relative bottom-0"
 >
