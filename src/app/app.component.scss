@@ -1,8 +1,31 @@
 @import "../../src/styles.scss";
 
+// Forma de toda la barra navbar
+.custom-shape-divider-top-1694106947 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  height: 17.5%;
+}
+
+.custom-shape-divider-top-1694106947 svg {
+  position: relative;
+  display: block;
+  width: calc(268% + 1.3px);
+  height: 290px;
+}
+
+.custom-shape-divider-top-1694106947 .shape-fill {
+  fill: $azulClaro;
+}
+
 .info {
-  background: rgb(31,93,176);
-  background: linear-gradient(99deg, rgba(31,93,176,1) 63%, rgba(0,133,255,0.9920343137254902) 100%);
+  background: $azulClaro;
+  // background: rgb(31,93,176);
+  // background: linear-gradient(99deg, rgba(31,93,176,1) 63%, rgba(0,133,255,0.9920343137254902) 100%);
   height: 3rem;
   .correo,
   .tlf {
@@ -11,18 +34,26 @@
   }
 }
 
-.navbar {
-  background-color: $claro;
+.containernav {
   padding: 0;
-  // margin: 1rem 0 0 0 ;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+
   h3 {
-    // color: rgb(116, 116, 116);
-    color: $azulPrincipal;
+    color: $claro;
     font-size: 3rem;
   }
+
   h6 {
-    font-size: 1rem;
-    color: $azulPrincipal;
+    font-size: 1.3rem;
+    color: $claro;
   }
 
   .nav-link {
@@ -34,18 +65,19 @@
   .iconNavBar {
     font-size: 4rem;
     margin-right: 4px;
-    // color: $claro;
-    color: $azulPrincipal;
+    color: $claro;
   }
   .navbar-toggler {
-    color: $azulPrincipal;
-    border-color: transparent;
+    color: $claro;
+    border-color: $claro;
   }
 }
 
 .footer {
   color: $claro;
-  background-color: $azulOscuro;
+  background-color: $gris;
+  // background-color: $azulOscuro;
+  min-height: 10vh;
 
   .bi {
     margin-right: 8px;
@@ -114,13 +146,47 @@
   }
 }
 
-//tamaño y centrado del Mikatec
-@media (max-width: 500px) {
-  .navbar-brand h3{
-    font-size: 2.5rem;
+@media (max-width: 991px) {
+  .navbar {
+    h6 {
+      font-size: 1rem;
+      color: $azulPrincipal;
+    }
+    .iconNavBar {
+      font-size: 3rem;
+    }
+
+    .navbar-toggler {
+      font-size: 2rem;
+      margin: 0;
+      padding: 0;
+      border-color: transparent;
+    }
+  }
+
+  .containernav {
+    margin-bottom: 2rem;
   }
 }
 
+//tamaño y centrado del Mikatec
+@media (max-width: 500px) {
+  .navbar-brand h3 {
+    font-size: 2.5rem;
+  }
+
+  // Forma de toda la barra navbar
+  .custom-shape-divider-top-1694106947 {
+    height: 20%;
+  }
+
+  .custom-shape-divider-top-1694106947 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 300px;
+  }
+}
 
 @media (max-width: 991px) {
   .nav-link {
